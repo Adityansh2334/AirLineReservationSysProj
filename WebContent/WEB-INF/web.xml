@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>AirLineProj</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet-mapping>
+  	<servlet-name>PlaneServlet</servlet-name>
+  	<url-pattern>/planein</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>PlaneServlet</servlet-name>
+  	<servlet-class>com.air.app.util.PlaneServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>PassengerServlet</servlet-name>
+  	<url-pattern>/pasngrin</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>PassengerServlet</servlet-name>
+  	<servlet-class>com.air.app.util.PassengerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ValidationServlet</servlet-name>
+  	<url-pattern>/fly</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>ValidationServlet</servlet-name>
+  	<servlet-class>com.air.app.util.ValidServlet</servlet-class>
+  </servlet>
+</web-app>
